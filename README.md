@@ -108,11 +108,16 @@ Would you like to install dependencies now [yes]?
 ```
 
 --
+
+```bash
+
+~/p/nrm-limesurvey ❯❯❯ docker run --rm --interactive --tty --volume $PWD:/app \                     
+    docker.io/library/composer update
+```
+
+--
 ```bash
 docker run --rm -it --name phpfpm -v $PWD:/app docker.io/bitnami/php-fpm /bin/bash
-
-
-   10  ./vendor/bin/phpcs src/application/config/
 ```
 
 NOTE: `--extensions=php`
