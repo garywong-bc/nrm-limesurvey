@@ -24,9 +24,9 @@
     "minimum-stability": "dev",
     "require": {},
     "scripts": {
-        "lint":  "phplint --no-cache src/application/controllers/",
-        "phpcs": "phpcs --extensions=php --standard=PSR12 src/application/controllers/",
-        "phpcbf":"phpcbf --standard=PSR12 src/application/controllers/",
+        "lint":  "phplint --no-cache src/",
+        "phpcs": "phpcs --extensions=php --standard=PSR12 src/",
+        "phpcbf":"phpcbf --standard=PSR12 src/",
         "test":  "phpunit tests/"
     }    
 }
