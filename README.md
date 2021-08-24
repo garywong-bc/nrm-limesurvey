@@ -2,12 +2,13 @@ NOTE: Current status is got tested using docker images for composer and php cli 
 
 Tuesday, August 24, 2021 at 9:31:49 AM
 
-
+```bash
 ~/p/nrm-limesurvey ❯❯❯ git clone --branch 5.1.3+210817 --single-branch https://github.com/LimeSurvey/LimeSurvey.git src
-
+```
 
 --
 
+```bash
 ~/p/nrm-limesurvey ❯❯❯ git clone --branch 5.1.3+210817 --single-branch https://github.com/LimeSurvey/LimeSurvey.git src
 Cloning into 'src'...
 remote: Enumerating objects: 366997, done.
@@ -34,10 +35,12 @@ Or undo this operation with:
 Turn off this advice by setting config variable advice.detachedHead to false
 
 Updating files: 100% (13717/13717), done.
+```
 
 ---
 
 
+```bash
 
 ~/p/nrm-limesurvey ❯❯❯ docker run --rm --interactive --tty --volume $PWD:/app \                     
     docker.io/library/composer init
@@ -102,14 +105,17 @@ Add PSR-4 autoload mapping? Maps namespace "Bcgov\NrmLimesurvey" to the entered 
 
 Do you confirm generation [yes]? 
 Would you like to install dependencies now [yes]? 
+```
 
 --
+```bash
 docker run --rm -it --name phpfpm -v $PWD:/app docker.io/bitnami/php-fpm /bin/bash
 
 
    10  ./vendor/bin/phpcs src/application/config/
+```
 
---extensions=php
+NOTE: `--extensions=php`
 
 ---
 
